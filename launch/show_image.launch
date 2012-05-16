@@ -1,0 +1,8 @@
+<launch>
+	<remap from="image" to="image_left"/>
+	<node name="image_view_left" pkg="image_view" type="image_view"/>
+
+	<remap from="image" to="image_right"/>
+	<node name="image_view_right" pkg="image_view" type="image_view"/>
+
+</launch>

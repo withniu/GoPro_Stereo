@@ -1,0 +1,21 @@
+<package>
+  <description brief="GoPro_Stereo">
+
+     GoPro_Stereo
+
+  </description>
+  <author>withniu</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/GoPro_Stereo</url>
+  <depend package="opencv2"/>
+  <depend package="roscpp"/>
+  <depend package="sensor_msgs"/>
+  <depend package="std_msgs"/>
+  <depend package="image_transport"/>
+  <depend package="cv_bridge"/>
+  <depend package="pcl_ros"/>
+  <depend package="tf"/>
+</package>
+
+

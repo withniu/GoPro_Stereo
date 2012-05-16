@@ -1,0 +1,27 @@
+<launch>
+	<node name="image_pub" pkg="GoPro_Stereo" type="image_publisher"/>
+
+	<remap from="filename" to="filename_left"/>
+	<node name="get_filename_left" pkg="GoPro_Stereo" type="get_filename" args="/home/withniu/GoPro/GOPRO_L/"/>
+
+	<remap from="filename" to="filename_right"/>
+	<node name="get_filename_right" pkg="GoPro_Stereo" type="get_filename" args="/home/withniu/GoPro/GOPRO_R/"/>
+
+	<remap from="image" to="gopro/image_left"/>
+	<node name="image_view_left" pkg="image_view" type="image_view"/>
+
+	<remap from="image" to="gopro/image_right"/>
+	<node name="image_view_right" pkg="image_view" type="image_view"/>
+
+	<remap from="image" to="gopro/image_rectified_left"/>
+	<node name="image_view_rectified_left" pkg="image_view" type="image_view"/>
+
+	<remap from="image" to="gopro/image_rectified_right"/>
+	<node name="image_view_rectified_right" pkg="image_view" type="image_view"/>
+
+	<remap from="image" to="gopro/image_disp"/>
+	<node name="image_view_disp" pkg="image_view" type="image_view"/>
+
+	
+
+</launch>

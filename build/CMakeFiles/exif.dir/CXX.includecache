@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/withniu/ros_workspace/GoPro_Stereo/src/exif.cpp
+exif.h
+/home/withniu/ros_workspace/GoPro_Stereo/src/exif.h
+
+/home/withniu/ros_workspace/GoPro_Stereo/src/exif.h
+stdlib.h
+-
+memory.h
+-
+string.h
+-
+stdio.h
+-
+math.h
+-
+malloc.h
+-
+
